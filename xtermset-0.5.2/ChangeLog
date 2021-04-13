@@ -1,0 +1,25 @@
+2003-06-09  breyten J. Ernsting  <bje@dds.nl>
+        * arguments.c : tiny bugs fixed
+        * term.c : tiny bugs fixed
+2002-11-04  Breyten J. Ernsting  <bje@dds.nl>
+        * term.c : added check for empty TERM enviroment variable
+
+2001-10-25  Breyten J. Ernsting  <bje@dds.nl>
+        * arguments.c : bug in arguments_freeall() fixed 
+        * term.c : bug in term_freeall() fixed
+
+2000-12-20  Breyten J. Ernsting  <bje@dds.nl>
+	* term.c : created functions for reading of term file
+	* arguments.c : fixed several bugs
+	* xtermset.h : added declarations for functions in term.c
+	* xtermset.c : removed is_good_term, fixed several bugs
+
+2000-06-30  Breyten J. Ernsting  <bje@dds.nl>
+
+	* xtermset.c (usage) : removed display of version info,
+	added display of bug mail-address ;)
+	* xtermset.c (version) : added
+	* xtermset.c (gplinfo) : added
+	* xtermset.c (main) : added check for --version and --help
+	* xtermset.h : added declarations for version() and gplinfo()
+

@@ -1,0 +1,76 @@
+.TH XTERMSET 1 "Dec 2000" "User Commands"
+.SH NAME
+xtermset \- change settings of an xterm
+.SH SYNOPSIS
+xtermset [\-option ...]
+.SH DESCRIPTION
+.B xtermset
+allows you to change the characteristics of an xterm window from the
+command line. Most options have the same names as those that you would
+give xterm at startup.
+.SH OPTIONS
+.TP 8
+.I \-store [<filename>]
+This option will save all the other command line options given to the
+filename. If filename is omitted then the options will be written to
+~/.xtermsetrc.
+.TP 8
+.I \-default [<filename>]
+This option will load options from the specified filename. If the filename
+is omitted then the options will be loaded from ~/.xtermsetrc. Options
+specified on the command line preceed those that are in the options file.
+.TP 8
+.I \-f, \-force
+xtermset normally checks if you are using it on a correct terminal (xterm
+(derivative) or dtterm (derivative). With this option you can override
+this checking. 
+.TP 8
+.I \-T string, \-title string
+Sets the window title.
+.TP 8
+.I \-n string
+Sets the icon name.
+.TP 8
+.I \-fg color
+Sets the VT100 foreground color.
+.TP 8
+.I \-bg color
+Sets the VT100 background color.
+.TP 8
+.I \-mousefg color
+Sets the mouse pointer foreground color.
+.TP 8
+.I \-mousebg color
+Sets the mouse pointer background color.
+.TP 8
+.I \-tekfg color
+Sets the Tektronix emulation window foreground color.
+.TP 8
+.I \-tekbg color
+Sets the Tektronix emulation window background color.
+.TP 8
+.I \-cr color
+Sets the text cursor color.
+.TP 8
+.I \-hc color
+Sets the color for highlighted (selected) text.
+.TP 8
+.I \-fn font-spec, \-font font-spec
+Sets the font.
+.TP 8
+.I \-geom geometry-spec, \-geometry geometry-spec
+Sets the window size and position; see X(1) for details.
+.SH FILES
+~/.xtermsetrc
+.SH SEE ALSO
+bash(1), xterm(1), X(1)
+.SH BUGS
+.I \-geom
+does not support offsets from the left or bottom of the screen.
+If the
+.I geometry-spec
+isn't in the correct format, the output will be strange.
+.SH AUTHORS
+Breyten Ernsting (bje@dds.nl)
+.br
+Decklin Foster (decklin@home.com)

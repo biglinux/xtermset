@@ -1,0 +1,18 @@
+Source: xtermset
+Section: x11
+Priority: optional
+Maintainer: Chrysostomos Nanakos <cnanakos@debian.org>
+Build-Depends: debhelper (>= 9), autoconf, automake
+Homepage: http://www.bje.nu/apps/xtermset/
+Vcs-Svn: svn://anonscm.debian.org/collab-maint/ext-maint/xtermset/trunk
+Vcs-Browser: http://anonscm.debian.org/viewvc/collab-maint/ext-maint/xtermset
+Standards-Version: 3.9.6
+
+Package: xtermset
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: xterm | eterm | rxvt
+Description: change the characteristics of an xterm
+ xtermset allows you to change the characteristics, such as title and
+ geometry, of an xterm window from the command line. Most options have
+ the same names as those that you would give xterm at startup.

@@ -1,0 +1,44 @@
+.TH TERMS 5 "Dec 2000" "File Formats"
+.SH NAME
+terms \- database of blessed terminals for xtermset.
+.SH DESCRIPTION
+The terms database is a file whichs tells xtermset which terminals are
+controllable.
+.LP
+.B terms
+is usually located in 
+.I /usr/share/xtermset
+and it is an ASCII file.
+A blessed terminal is described in one line.
+.LP
+There are several modifiers which affect the way how xtermset
+interprets the
+.B TERM
+variable\.
+.LP
+.B ^<term-name>
+tells xtermset that 
+.B $TERM
+should begin with
+.I <term-name>
+.
+.LP
+.B <term-name>$
+tells xtermset that
+.B $TERM
+should begin with
+.I <term-name>
+.LP
+.B <term-name>
+tells xtermset that
+.B $TERM
+must contain
+.I <term-name>
+.LP
+You can combine the
+.I ^
+and the
+.I $
+options to create an exact match for
+.B $TERM
+.

@@ -1,0 +1,44 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: xtermset
+Upstream-Contact: Breyten Ernsting <bje@dds.nl>
+Source: http://sourceforge.net/projects/clts/
+
+Files: *
+Copyright: 1994-2002 Breyten J. Ernsting
+License: GPL-2+
+
+Files: debian/*
+Copyright: Tommi Virtaten <tv@debian.org>
+           Patrick Schoenfeld <schoenfeld@in-medias-res.com>
+           Chrysostomos Nanakos <cnanakos@debian.org>
+License: GPL-2+
+
+Files: src/*
+Copyright: 1994-2002 Breyten J. Ernsting
+License: GPL-2+
+
+Files: Makefile.am m4/Makefile.am acconfig.h configure.in reconf NEWS
+Copyright: 2000 Breyten J. Ernsting
+License: public-domain
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this package; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-2'
+
+License: public-domain
+ No license required for any purpose; the work is not subject to copyright in
+ any jurisdiction.

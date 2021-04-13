@@ -1,0 +1,5 @@
+xtermset: configure-generated-file-in-source
+xtermset: source-contains-cvs-control-dir CVS
+xtermset: source-contains-cvs-control-dir doc/CVS
+xtermset: source-contains-cvs-control-dir m4/CVS
+xtermset: source-contains-cvs-control-dir src/CVS

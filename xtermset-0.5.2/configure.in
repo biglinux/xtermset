@@ -1,0 +1,21 @@
+# Copyright (C) 2000 Breyten J. Ernsting <bje@dds.nl>
+#  
+# This file is free software; as a special exception the author gives
+# unlimited permission to copy and/or distribute it, with or without 
+# modifications, as long as this notice is preserved.
+# 
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY, to the extent permitted by law; without even the
+# implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+AC_INIT(reconf)
+AM_CONFIG_HEADER(config.h)
+AM_INIT_AUTOMAKE(xtermset,0.5.2)
+AC_PROG_CC
+AC_AIX
+AC_ISC_POSIX
+AC_MINIX
+AC_STDC_HEADERS
+AC_CHECK_HEADER(assert.h)
+CFLAGS="$CFLAGS -DTERMSDIR='"'"$(pkgdatadir)"'"'"
+AC_OUTPUT(Makefile doc/Makefile m4/Makefile src/Makefile)
