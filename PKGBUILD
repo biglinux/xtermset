@@ -14,6 +14,7 @@ url='https://github.com/biglinux/xtermset'
 license=('GPL')
 depends=('gcc')
 source=(git+https://github.com/biglinux/xtermset)
+sha256sums=('SKIP')
 
 prepare() {
 	pkgdir=${PKG}
