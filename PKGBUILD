@@ -21,7 +21,7 @@ prepare() {
 }
 
 build() {
-    cd src/xtermset/xtermset-0.5.2
+    cd src/${pkgname}/${pkgname}-${pkgver}
     aclocal
     autoconf
 	automake --add-missing --copy
@@ -30,7 +30,7 @@ build() {
 }
 
 package() {
-    cd xtermset/xtermset-0.5.2
+    cd ${pkgname}/${pkgname}-${pkgver}
     make DESTDIR=${pkgdir} install
 }
 
